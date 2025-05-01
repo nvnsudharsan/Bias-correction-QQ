@@ -31,11 +31,6 @@ This approach performs:
 ```python
 from bias_correction_gamma_salvi_modular import run_bias_correction
 
-# Inputs: xarray DataArrays (with dimensions time, lat, lon)
-# hist - historical model output
-# fut  - future model output
-# obs  - observational reference dataset
-
 hist_corr, fut_corr = run_bias_correction(
     hist, fut, obs,
     save_path="./output",    # optional folder to save NetCDF files

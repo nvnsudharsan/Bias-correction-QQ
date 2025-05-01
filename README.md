@@ -29,7 +29,7 @@ This approach performs:
 ## Usage
 
 ```python
-from bias_correction_gamma_salvi_modular import run_bias_correction
+from quantile_mapping import run_bias_correction
 
 hist_corr, fut_corr = run_bias_correction(
     hist, fut, obs,

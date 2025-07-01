@@ -32,7 +32,7 @@ This approach performs:
 from quantile_mapping import run_bias_correction
 
 hist_corr, fut_corr = run_bias_correction(
-    hist, fut, obs,
+    hist, fut, obs,          # hist- historical data, fut - future projection, obs - observation data
     save_path="./output",    # optional folder to save NetCDF files
     region="India"           # "India", "US", "Australia", or leave blank for default seasons
 )
